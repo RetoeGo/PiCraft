@@ -22,8 +22,9 @@ The figure below shows the pipeline of the tool.
   - obj: the location for the generated obj files
   - image: the location of all the generated images
 ### bot
-  - bot.py: the code that handles users request to transform text into a minecraft structure
-  - response.py: the code that calls api's from chatGPT, Replicate and other websites that provide GPU's to generate the object belonging to each house.
+  - bot.py: the code that handles users request from discord to transform text into a minecraft structure it calls gpt.py with its provided prompt. when gpt.py returns, bot.py sends the zip file to the user.
+  - gpt.py: the code that generates multiple gpt prompts, for each prompt it calls response.py to generate an object. after its finished, gpt.py calls converter.py to convert the obj into an nbt file. gpt.py places it into the Japanese file.
+  - response.py: the code that calls api's from Replicate to generate the object belonging to each house.
   - converter.py: the conversion from object into Minecraft House structure
   - palette.txt: the color mappings as used to generate the first 2 datasets back into structures
   - Pack: the place for your generated intermediate image, obj and nbt files.

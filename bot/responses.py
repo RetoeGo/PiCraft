@@ -1,3 +1,5 @@
+# chat-gpt was used to help write the file.
+
 import replicate
 import os
 import requests

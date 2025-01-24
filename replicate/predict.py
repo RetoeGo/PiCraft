@@ -36,7 +36,7 @@ def make_scheduler(name, config):
 class Predictor(BasePredictor):
     def setup(self):
         # Log in to Hugging Face Hub
-        login('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')
+        login('')
         print("Loading pipeline...")
 
         # Load SDXL pipeline

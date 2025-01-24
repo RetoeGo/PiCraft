@@ -47,6 +47,14 @@ stable.slurm
 
 ## Huggingface
 Each of the datasets is published on huggingface below the links to the models on huggingface.
+8k dataset: https://huggingface.co/datasets/Retoe/image8k
+10k dataset: https://huggingface.co/datasets/Retoe/image10k
+15k dataset: https://huggingface.co/datasets/Retoe/image15k
+8k model: https://huggingface.co/Retoe/stable8k
+10k model: https://huggingface.co/Retoe/sd10k
+15k model: https://huggingface.co/Retoe/sd15k
+
 
 ## Replicate
 Below the model as published on Replicate
+https://replicate.com/retoego/picraft

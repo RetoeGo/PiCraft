@@ -17,7 +17,7 @@ The figure below shows the pipeline of the tool.
 ### dataset
   - converter.py: the code used to generate images
   - push.py: A file to upload the generated images to huggingface
-  - palate.txt: the color mappings as used to generate the first 2 datasets
+  - palette.txt: the color mappings as used to generate the first 2 datasets
   - schem: the location of your provided schematic files.
   - obj: the location for the generated obj files
   - image: the location of all the generated images
@@ -25,7 +25,7 @@ The figure below shows the pipeline of the tool.
   - bot.py: the code that handles users request to transform text into a minecraft structure
   - response.py: the code that calls api's from chatGPT, Replicate and other websites that provide GPU's to generate the object belonging to each house.
   - converter.py: the conversion from object into Minecraft House structure
-  - palate.txt: the color mappings as used to generate the first 2 datasets back into structures
+  - palette.txt: the color mappings as used to generate the first 2 datasets back into structures
   - Pack: the place for your generated intermediate image, obj and nbt files.
   - Japanese: ... This is the Datapack where the nbt structures are automatically replaced. This datapack was originally made available here: https://www.planetminecraft.com/data-pack/japanese-cherry-village-1-20-4/
 ### Replicate

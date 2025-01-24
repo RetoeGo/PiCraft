@@ -1,3 +1,5 @@
+# chat-gpt was used to help write the file.
+
 import nbtlib
 import trimesh
 import open3d as o3d

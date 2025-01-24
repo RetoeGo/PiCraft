@@ -42,12 +42,12 @@ def handle_request(prompt, generation_number):
     )   
     print("Generated guidance image URL:", stable_diffusion_output)
     guidance_image_url = stable_diffusion_output[0].url  # Extract the URL from FileOutput object
-    guidance_image_path = os.path.join('/Users/robinkruijf/Desktop/Thesis/bot/generated', f'guidance_image_{generation_number}.webp')
+    guidance_image_path = os.path.join('', f'guidance_image_{generation_number}.webp')
     save_image_from_url(guidance_image_url, guidance_image_path)
 
     print("Using generated image as guidance image.")
 
-    # Step 1: Generate the image using the new model (retoego/sd8kv19)
+    # Step 1: Generate the image using the new model (retoego/PiCraft)
     output = replicate.run(
         "retoego/sd8kv19:93e06d3d45d352c36e2af90be1233978ad34a0525c0336f6f955195a27842c38",
         input={
@@ -67,7 +67,7 @@ def handle_request(prompt, generation_number):
     print("Generated image URL:", image_url)
 
     # Save the generated image from the new model
-    generated_image_path = os.path.join('/Users/robinkruijf/Desktop/Thesis/bot/generated', f'generated_image_{generation_number}.webp')
+    generated_image_path = os.path.join('', f'generated_image_{generation_number}.webp')
     save_image_from_url(image_url, generated_image_path)
 
     # Step 2: Send the image URL to another model to remove background and get the OBJ
@@ -82,8 +82,8 @@ def handle_request(prompt, generation_number):
     # Step 3: Download and save the resulting GLB model
     glb_url = glb_output
     glb_response = requests.get(glb_url)
-    glb_path = os.path.join('/Users/robinkruijf/Desktop/Thesis/bot/generated', f'generated_model_{generation_number}.glb')
-    obj_path = os.path.join('/Users/robinkruijf/Desktop/Thesis/bot/generated', f'generated_model_{generation_number}.obj')
+    glb_path = os.path.join('', f'generated_model_{generation_number}.glb')
+    obj_path = os.path.join('', f'generated_model_{generation_number}.obj')
     print(f"GLB Response: {glb_response}")
     print(f"GLB URL: {glb_url}")
 

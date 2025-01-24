@@ -34,7 +34,16 @@ The figure below shows the pipeline of the tool.
   - palate.txt: the color mappings as used to generate 3 datasets back into structures
   - Pack: the place for your generated intermediate image, obj and nbt files.
   - Japanese: ... This is the Datapack where the nbt structures are automatically replaced. This datapack was originally made available here: https://www.planetminecraft.com/data-pack/japanese-cherry-village-1-20-4/
+### Replicate
+#### cog-stable-diffusion
+- cog.yaml
+- predict.py
+- pytorch_lora_weights.safetensors
+- LICENSE
+- README.md
 
+## SLURM Fine-tune
+stable.slurm
 
 ## Huggingface
 Each of the datasets is published on huggingface below the links to the models on huggingface.

@@ -10,9 +10,9 @@ The figure below shows the pipeline of the tool.
 </p>
 
 ## Structure
-images: the images used for the Readme
-README.md: the text your reading now.
-Thesis.pdf: an eleborate explanation of StableDiffusion and what was created in the project.
+- images: the images used for the Readme
+- README.md: the text your reading now.
+- Thesis.pdf: an eleborate explanation of StableDiffusion and what was created in the project.
 
 ### dataset
   - requirements.txt: A file with the python import requirements for creating the dataset

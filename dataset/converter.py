@@ -604,7 +604,7 @@ def create_image(glb_path, img_count):
         scene = mesh.scene()
 
 def get_name(number):
-    file_path = 'TrainingData/08RFHbg.txt'
+    file_path = 'schem/name.txt'
     with open(file_path, 'r') as file:
         for line in file:
             num, text = line.strip().split(' - ', 1)

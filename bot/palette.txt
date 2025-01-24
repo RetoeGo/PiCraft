@@ -1,3 +1,4 @@
+# chat-gpt was used to help write the file.
 
 # Color to Block Mapping (Complete list from the provided colors)
 block_colors = {

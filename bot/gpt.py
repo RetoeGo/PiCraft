@@ -1,3 +1,5 @@
+# chat-gpt was used to help write the file.
+
 import requests
 import multiprocessing
 from pydantic import BaseModel

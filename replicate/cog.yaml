@@ -1,0 +1,17 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.11"
+  python_packages:
+    - "torch==2.0.1+cu118"  # Compatible with CUDA 11.8
+    - "diffusers==0.25.0"   # Compatible with Stable Diffusion XL
+    - "transformers==4.30.0"  # Works with the recent versions of diffusers
+    - "ftfy==6.1.1"
+    - "scipy==1.9.3"
+    - "accelerate==0.20.3"  # Supports optimized training/inference
+    - "huggingface-hub==0.19.4"
+    - "Pillow==9.4.0"  # For image handling
+    - "cog==0.7.0"  # Required for building and running the model
+    - "protobuf==3.20.3"
+    - "safetensors===0.3.1"  # Required to load .safetensors model weights
+predict: "predict.py:Predictor"

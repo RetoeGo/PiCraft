@@ -1,3 +1,5 @@
+# chat-gpt was used to help write the file.
+
 import discord
 import asyncio
 import responses  # Assuming this contains your custom functions

@@ -14,7 +14,7 @@ images: the images used for the Readme
 README.md: the text your reading now.
 Thesis.pdf: an eleborate explanation of StableDiffusion and what was created in the project.
 
-dataset
+### dataset
   - requirements.txt: A file with the python import requirements for creating the dataset
   - converter.py: the code used to generate images
   - push.py: A file to upload the generated images to huggingface
@@ -22,7 +22,7 @@ dataset
   - schem: the location of your provided schematic files.
   - obj: the location for the generated obj files
   - image: the location of all the generated images
-bot
+### bot
   - requirements.txt: A file with the python import requirements
   - config.sh: A file with the exports required to set the environment to run the tool.
   - bot.py: the code that handles users request to transform text into a minecraft structure
